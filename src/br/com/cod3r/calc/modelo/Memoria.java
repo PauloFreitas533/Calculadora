@@ -84,7 +84,7 @@ public class Memoria {
 			resultado = numeroBuffer / numeroAtual;
 		}
 		
-		String texto = Double.toHexString(resultado).replace(".", ",");
+		String texto = Double.toString(resultado).replace(".", ",");
 		boolean inteiro = texto.endsWith(",0");
 		return inteiro ? texto.replace(",0", "") : texto;
 	}
